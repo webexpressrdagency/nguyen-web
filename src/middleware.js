@@ -13,6 +13,7 @@ export function middleware(request) {
     pathname.startsWith('/api') ||
     pathname.startsWith('/_next') ||
     pathname.startsWith('/img') ||
+    pathname.startsWith('/placeholder') ||
     pathname.startsWith('/uploads') ||
     /\.[a-zA-Z0-9]+$/.test(pathname)
   ) {
