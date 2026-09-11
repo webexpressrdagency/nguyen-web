@@ -1163,3 +1163,77 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 1080px) {
   .with-sidebar, .with-sidebar--form { grid-template-columns: 1fr; gap: 40px; }
 }
+
+/* ==========================================================================
+   Products
+   ========================================================================== */
+.product-card__media { aspect-ratio: 1 / 1; }
+.product-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: var(--grad);
+  color: #fff;
+  font-family: var(--font-head), sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+}
+.product-card__cat {
+  font-family: var(--font-head), sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: var(--green-600);
+}
+.product-card__foot {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding-top: 6px;
+}
+.product-card__price {
+  font-family: var(--font-head), sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.5px;
+}
+
+.product-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.product-detail__media {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+.product-detail__media img { width: 100%; height: 100%; object-fit: cover; }
+.product-detail__price {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 6px 0 22px;
+}
+.product-detail__price b {
+  font-family: var(--font-head), sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.product-detail__price span { font-size: 13px; letter-spacing: 1.1px; text-transform: uppercase; color: var(--muted); }
+.product-detail__actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px; }
+
+@media (max-width: 1080px) {
+  .product-detail { grid-template-columns: 1fr; gap: 36px; }
+}

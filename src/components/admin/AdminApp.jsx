@@ -48,6 +48,7 @@ const NAV_ITEMS = [
   { id: 'sections', label: 'Secciones de la home', icon: 'spine', group: 'Contenido' },
   { id: 'pages', label: 'Páginas internas', icon: 'calendar', group: 'Contenido' },
   { id: 'services', label: 'Servicios', icon: 'hand', group: 'Colecciones' },
+  { id: 'products', label: 'Productos', icon: 'wallet', group: 'Colecciones' },
   { id: 'team', label: 'Equipo', icon: 'people', group: 'Colecciones' },
   { id: 'testimonials', label: 'Testimonios', icon: 'quote', group: 'Colecciones' },
   { id: 'posts', label: 'Blog', icon: 'mail', group: 'Colecciones' },
@@ -157,7 +158,7 @@ export default function AdminApp({ initial, storage, defaultPassword }) {
 
         <div className="adm-nav__sep">Sesión</div>
         <nav className="adm-nav">
-          <button type="button" onClick={() => window.open('/en', '_blank')}>
+          <button type="button" onClick={() => window.open('/', '_blank')}>
             <Icon name="arrowRight" />
             <span>Ver el sitio</span>
           </button>
@@ -258,8 +259,8 @@ function Dashboard({ content, onGo }) {
   const pending = (content.submissions?.appointments || []).filter((s) => !s.read).length;
   const stats = [
     { n: (content.services || []).length, l: 'Servicios' },
+    { n: (content.products || []).length, l: 'Productos' },
     { n: (content.posts || []).length, l: 'Artículos del blog' },
-    { n: (content.team || []).length, l: 'Miembros del equipo' },
     { n: pending, l: 'Citas sin leer' },
   ];
 
@@ -278,8 +279,8 @@ function Dashboard({ content, onGo }) {
         <h2>Cómo editar el sitio</h2>
         <p>
           Todo el contenido está en un solo lugar. Elija una sección en el menú de la izquierda, haga
-          los cambios y pulse <b>Guardar cambios</b> arriba a la derecha. Cada texto tiene dos campos:
-          <b> EN</b> para inglés (idioma principal) y <b>ES</b> para español.
+          los cambios y pulse <b>Guardar cambios</b> arriba a la derecha. El sitio está en inglés,
+          así que escriba los textos del sitio en inglés aunque el panel esté en español.
         </p>
         <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: 14 }}>
           <button type="button" className="adm-btn adm-btn--ghost adm-btn--sm" onClick={() => onGo('sections')}>
@@ -287,6 +288,9 @@ function Dashboard({ content, onGo }) {
           </button>
           <button type="button" className="adm-btn adm-btn--ghost adm-btn--sm" onClick={() => onGo('services')}>
             Editar servicios
+          </button>
+          <button type="button" className="adm-btn adm-btn--ghost adm-btn--sm" onClick={() => onGo('products')}>
+            Editar productos
           </button>
           <button type="button" className="adm-btn adm-btn--ghost adm-btn--sm" onClick={() => onGo('settings')}>
             Teléfono, dirección y colores
@@ -301,13 +305,18 @@ function Dashboard({ content, onGo }) {
         <h2>Enlaces del sitio</h2>
         <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: 8 }}>
           <li>
-            <a href="/en" target="_blank" rel="noreferrer">
-              Sitio en inglés (/en)
+            <a href="/" target="_blank" rel="noreferrer">
+              Página de inicio
             </a>
           </li>
           <li>
-            <a href="/es" target="_blank" rel="noreferrer">
-              Sitio en español (/es)
+            <a href="/products" target="_blank" rel="noreferrer">
+              Productos
+            </a>
+          </li>
+          <li>
+            <a href="/services" target="_blank" rel="noreferrer">
+              Servicios
             </a>
           </li>
         </ul>
@@ -586,12 +595,6 @@ function Inbox({ submissions, onChange }) {
 /* ================================================================== */
 function SettingsView({ content, update, setContent, setDirty }) {
   const settings = content.settings || {};
-  const enabled = settings.locales?.enabled || ['en', 'es'];
-
-  const toggleLocale = (loc) => {
-    const next = enabled.includes(loc) ? enabled.filter((l) => l !== loc) : [...enabled, loc];
-    update(['settings', 'locales', 'enabled'], next.length ? next : ['en']);
-  };
 
   const exportJson = () => {
     const blob = new Blob([JSON.stringify(content, null, 2)], { type: 'application/json' });
@@ -663,26 +666,6 @@ function SettingsView({ content, update, setContent, setDirty }) {
           )}
         </div>
       ))}
-
-      <div className="adm-card">
-        <h2>Idiomas</h2>
-        <p style={{ marginTop: -4 }}>
-          El inglés es el idioma principal (<code>/en</code>). El español se sirve en <code>/es</code>.
-        </p>
-        <div style={{ display: 'flex', gap: 18, marginTop: 12 }}>
-          {['en', 'es'].map((loc) => (
-            <label className="adm-toggle" key={loc}>
-              <input
-                type="checkbox"
-                checked={enabled.includes(loc)}
-                disabled={loc === 'en'}
-                onChange={() => toggleLocale(loc)}
-              />
-              <span>{loc === 'en' ? 'Inglés (principal)' : 'Español'}</span>
-            </label>
-          ))}
-        </div>
-      </div>
 
       <div className="adm-card">
         <h2>Copia de seguridad</h2>

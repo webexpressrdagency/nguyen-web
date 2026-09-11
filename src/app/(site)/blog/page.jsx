@@ -2,8 +2,8 @@ import { PageHero, PostCard } from '@/components/Cards';
 import { getContent } from '@/lib/store';
 import { t } from '@/lib/i18n';
 
-export default async function BlogPage({ params }) {
-  const { locale } = await params;
+export default async function BlogPage() {
+  const locale = 'en';
   const content = await getContent();
   const page = content.pages?.blog || {};
   const posts = [...(content.posts || [])].sort((a, b) => String(b.date).localeCompare(String(a.date)));

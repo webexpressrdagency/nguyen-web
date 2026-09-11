@@ -5,16 +5,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Icon from './Icon';
 
-export default function Header({
-  locale,
-  locales = ['en'],
-  brand,
-  nav = [],
-  contact,
-  ctaLabel,
-  labels,
-}) {
-  const pathname = usePathname() || '';
+export default function Header({ brand, nav = [], contact, ctaLabel, labels }) {
+  const pathname = usePathname() || '/';
   const [open, setOpen] = useState(false);
 
   useEffect(() => setOpen(false), [pathname]);
@@ -25,11 +17,8 @@ export default function Header({
     };
   }, [open]);
 
-  const rest = pathname.replace(/^\/(en|es)/, '') || '';
-  const isActive = (href) => {
-    const full = `/${locale}${href === '/' ? '' : href}`;
-    return href === '/' ? pathname === full || pathname === `${full}/` : pathname.startsWith(full);
-  };
+  const isActive = (href) =>
+    href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <>
@@ -62,7 +51,7 @@ export default function Header({
 
       <header className="site-header">
         <div className="container site-header__inner">
-          <Link href={`/${locale}`} className="brand" aria-label={brand?.name}>
+          <Link href="/" className="brand" aria-label={brand?.name}>
             {brand?.logo ? <img src={brand.logo} alt={brand?.name || 'Logo'} /> : null}
             <span className="brand__name">
               {brand?.shortName || brand?.name}
@@ -72,28 +61,14 @@ export default function Header({
 
           <nav className="nav" aria-label="Main">
             {nav.map((item) => (
-              <Link
-                key={item.href}
-                href={`/${locale}${item.href === '/' ? '' : item.href}`}
-                aria-current={isActive(item.href) ? 'page' : undefined}
-              >
+              <Link key={item.href} href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>
                 {item.label}
               </Link>
             ))}
           </nav>
 
           <div className="header-actions">
-            {locales.length > 1 ? (
-              <div className="lang-switch" aria-label={labels?.language}>
-                {locales.map((l) => (
-                  <Link key={l} href={`/${l}${rest}`} data-active={l === locale} hrefLang={l}>
-                    {l}
-                  </Link>
-                ))}
-              </div>
-            ) : null}
-
-            <Link href={`/${locale}/appointment`} className="btn btn--sm hide-sm">
+            <Link href="/appointment" className="btn btn--sm hide-sm">
               {ctaLabel}
             </Link>
 
@@ -121,20 +96,20 @@ export default function Header({
             ×
           </button>
 
-          <Link href={`/${locale}`} className="brand" onClick={() => setOpen(false)}>
+          <Link href="/" className="brand" onClick={() => setOpen(false)}>
             {brand?.logo ? <img src={brand.logo} alt="" /> : null}
             <span className="brand__name">{brand?.shortName || brand?.name}</span>
           </Link>
 
           <nav className="mobile-nav">
             {nav.map((item) => (
-              <Link key={item.href} href={`/${locale}${item.href === '/' ? '' : item.href}`}>
+              <Link key={item.href} href={item.href}>
                 {item.label}
               </Link>
             ))}
           </nav>
 
-          <Link href={`/${locale}/appointment`} className="btn btn--block">
+          <Link href="/appointment" className="btn btn--block">
             {ctaLabel}
           </Link>
 

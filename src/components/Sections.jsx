@@ -4,7 +4,7 @@ import Carousel from './Carousel';
 import Counter from './Counter';
 import Accordion from './Accordion';
 import ProgressBars from './ProgressBars';
-import { ServiceCard, TeamCard, PostCard, QuoteCard } from './Cards';
+import { ServiceCard, TeamCard, PostCard, QuoteCard, ProductCard } from './Cards';
 import { t, getUi, localePath } from '@/lib/i18n';
 
 export default function Section({ section, content, locale }) {
@@ -116,6 +116,37 @@ export default function Section({ section, content, locale }) {
                 <ServiceCard key={s.id} service={s} locale={locale} />
               ))}
             </Carousel>
+          </div>
+        </section>
+      );
+    }
+
+    /* ---------------------------------------------------------------- */
+    case 'products': {
+      const items = (content.products || []).slice(0, Number(d.limit) || 4);
+      if (!items.length) return null;
+      return (
+        <section className="section">
+          <div className="container">
+            <div
+              className="sec-head reveal"
+              style={{ display: 'flex', gap: 28, alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap' }}
+            >
+              <div className="maxw-640">
+                <span className="eyebrow">{t(d.eyebrow, locale)}</span>
+                <h2>{t(d.title, locale)}</h2>
+                {d.text ? <p>{t(d.text, locale)}</p> : null}
+              </div>
+              <Link href={localePath(locale, '/products')} className="link-more">
+                {t(d.ctaLabel, locale) || ui.viewAll}
+                <Icon name="arrowRight" />
+              </Link>
+            </div>
+            <div className="grid grid-4">
+              {items.map((pr) => (
+                <ProductCard key={pr.id} product={pr} locale={locale} />
+              ))}
+            </div>
           </div>
         </section>
       );

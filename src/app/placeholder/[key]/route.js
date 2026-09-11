@@ -20,6 +20,7 @@ const SIZES = {
   gallery: [900, 680],
   portrait: [600, 700],
   avatar: [400, 400],
+  product: [800, 800],
 };
 
 const INITIALS = {
@@ -59,6 +60,7 @@ function sizeFor(key) {
   if (key.startsWith('condition')) return SIZES.condition;
   if (key.startsWith('blog')) return SIZES.blog;
   if (key.startsWith('gallery')) return SIZES.gallery;
+  if (key.startsWith('product')) return SIZES.product;
   if (/^avatar-[1-4]$/.test(key)) return SIZES.portrait;
   if (key.startsWith('avatar')) return SIZES.avatar;
   return [900, 640];

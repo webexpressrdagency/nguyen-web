@@ -6,7 +6,8 @@ import { getContent } from '@/lib/store';
 import { t, getUi, formatDate, localePath } from '@/lib/i18n';
 
 export async function generateMetadata({ params }) {
-  const { locale, slug } = await params;
+  const locale = 'en';
+  const { slug } = await params;
   const content = await getContent();
   const post = (content.posts || []).find((p) => p.slug === slug);
   if (!post) return {};
@@ -14,7 +15,8 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function PostDetail({ params }) {
-  const { locale, slug } = await params;
+  const locale = 'en';
+  const { slug } = await params;
   const content = await getContent();
   const post = (content.posts || []).find((p) => p.slug === slug);
   if (!post) notFound();
@@ -87,7 +89,7 @@ export default async function PostDetail({ params }) {
 
       <CtaBand
         locale={locale}
-        title={locale === 'es' ? '¿Preguntas sobre su caso?' : 'Questions about your case?'}
+        title={'Questions about your case?'}
         text={ui.emergencyNote}
       />
     </>

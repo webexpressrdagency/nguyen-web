@@ -3,8 +3,8 @@ import { PageHero, CtaBand, TeamCard } from '@/components/Cards';
 import { getContent } from '@/lib/store';
 import { t, getUi } from '@/lib/i18n';
 
-export default async function AboutPage({ params }) {
-  const { locale } = await params;
+export default async function AboutPage() {
+  const locale = 'en';
   const content = await getContent();
   const page = content.pages?.about || {};
   const ui = getUi(locale);
@@ -69,8 +69,8 @@ export default async function AboutPage({ params }) {
       <section className="section">
         <div className="container">
           <div className="sec-head text-center maxw-720 mx-auto reveal">
-            <span className="eyebrow eyebrow--center">{locale === 'es' ? 'Equipo Dedicado' : 'Dedicated Team'}</span>
-            <h2>{locale === 'es' ? 'Nuestro Equipo' : 'Our Team'}</h2>
+            <span className="eyebrow eyebrow--center">{'Dedicated Team'}</span>
+            <h2>{'Our Team'}</h2>
           </div>
           <div className="grid grid-4">
             {(content.team || []).map((m) => (
@@ -82,7 +82,7 @@ export default async function AboutPage({ params }) {
 
       <CtaBand
         locale={locale}
-        title={locale === 'es' ? '¿Listo para sentirse mejor?' : 'Ready to feel better?'}
+        title={'Ready to feel better?'}
         text={ui.emergencyNote}
       />
     </>

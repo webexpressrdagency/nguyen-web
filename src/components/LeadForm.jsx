@@ -2,7 +2,13 @@
 
 import { useState } from 'react';
 
-export default function LeadForm({ kind = 'contact', locale = 'en', labels = {}, services = [] }) {
+export default function LeadForm({
+  kind = 'contact',
+  locale = 'en',
+  labels = {},
+  services = [],
+  defaultSubject = '',
+}) {
   const [state, setState] = useState('idle');
   const [error, setError] = useState('');
 
@@ -74,7 +80,12 @@ export default function LeadForm({ kind = 'contact', locale = 'en', labels = {},
         ) : (
           <div className="field">
             <label htmlFor={`${kind}-subject`}>{labels.subject}</label>
-            <input id={`${kind}-subject`} name="subject" type="text" />
+            <input
+              id={`${kind}-subject`}
+              name="subject"
+              type="text"
+              defaultValue={defaultSubject}
+            />
           </div>
         )}
 

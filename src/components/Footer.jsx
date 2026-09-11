@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Icon from './Icon';
 import { t, getUi, localePath } from '@/lib/i18n';
 
-export default function Footer({ content, locale }) {
+export default function Footer({ content, locale = 'en' }) {
   const { settings, footer, services } = content;
   const ui = getUi(locale);
   const year = new Date().getFullYear();

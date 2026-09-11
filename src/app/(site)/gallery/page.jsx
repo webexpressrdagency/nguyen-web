@@ -2,8 +2,8 @@ import { PageHero } from '@/components/Cards';
 import { getContent } from '@/lib/store';
 import { t } from '@/lib/i18n';
 
-export default async function GalleryPage({ params }) {
-  const { locale } = await params;
+export default async function GalleryPage() {
+  const locale = 'en';
   const content = await getContent();
   const page = content.pages?.gallery || {};
 

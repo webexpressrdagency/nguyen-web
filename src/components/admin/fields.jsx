@@ -3,9 +3,17 @@
 import { useRef, useState } from 'react';
 import Icon, { ICON_NAMES, SOCIAL_ICONS } from '../Icon';
 
-export const LOCALE_TAGS = ['en', 'es'];
-
-const asI18n = (v) => (v && typeof v === 'object' ? v : { en: v || '', es: v || '' });
+/** Content is English-only. Legacy { en, es } values are read as their English text. */
+const asText = (v) => {
+  if (v === null || v === undefined) return '';
+  if (typeof v === 'string' || typeof v === 'number') return String(v);
+  if (typeof v === 'object') {
+    if (typeof v.en === 'string') return v.en;
+    const first = Object.values(v).find((x) => typeof x === 'string');
+    return first || '';
+  }
+  return '';
+};
 
 /* ------------------------------------------------------------------ */
 export function TextInput({ value, onChange, ...rest }) {
@@ -32,22 +40,11 @@ export function TextArea({ value, onChange, rows = 4, ...rest }) {
 }
 
 export function I18nInput({ value, onChange, area = false, rows = 4 }) {
-  const v = asI18n(value);
-  return (
-    <div className="adm-i18n">
-      {LOCALE_TAGS.map((loc) => (
-        <div className="adm-i18n__row" key={loc}>
-          <span className="adm-i18n__tag" data-locale={loc}>
-            {loc}
-          </span>
-          {area ? (
-            <TextArea value={v[loc]} rows={rows} onChange={(next) => onChange({ ...v, [loc]: next })} />
-          ) : (
-            <TextInput value={v[loc]} onChange={(next) => onChange({ ...v, [loc]: next })} />
-          )}
-        </div>
-      ))}
-    </div>
+  const v = asText(value);
+  return area ? (
+    <TextArea value={v} rows={rows} onChange={onChange} />
+  ) : (
+    <TextInput value={v} onChange={onChange} />
   );
 }
 

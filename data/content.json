@@ -4,10 +4,7 @@
     "siteName": "Nguyen Chiropractic and Acupuncture Wellness",
     "shortName": "Nguyen Chiropractic",
     "logo": "/img/logo.webp",
-    "tagline": {
-      "en": "We treat the cause of your pain, not just the symptom.",
-      "es": "Tratamos la causa de su dolor, no solo el síntoma."
-    },
+    "tagline": "We treat the cause of your pain, not just the symptom.",
     "colors": {
       "primary": "#4285F4",
       "secondary": "#34A853",
@@ -23,56 +20,114 @@
       "mapEmbed": "https://www.google.com/maps?q=Houston,TX&output=embed"
     },
     "hours": [
-      { "days": { "en": "Monday – Friday", "es": "Lunes – Viernes" }, "time": "9:00 AM – 6:00 PM" },
-      { "days": { "en": "Saturday", "es": "Sábado" }, "time": "9:00 AM – 1:00 PM" },
-      { "days": { "en": "Sunday", "es": "Domingo" }, "time": { "en": "Closed", "es": "Cerrado" } }
+      {
+        "days": "Monday – Friday",
+        "time": "9:00 AM – 6:00 PM"
+      },
+      {
+        "days": "Saturday",
+        "time": "9:00 AM – 1:00 PM"
+      },
+      {
+        "days": "Sunday",
+        "time": "Closed"
+      }
     ],
     "social": [
-      { "network": "facebook", "url": "#" },
-      { "network": "instagram", "url": "#" },
-      { "network": "youtube", "url": "#" }
+      {
+        "network": "facebook",
+        "url": "#"
+      },
+      {
+        "network": "instagram",
+        "url": "#"
+      },
+      {
+        "network": "youtube",
+        "url": "#"
+      }
     ],
     "seo": {
-      "title": {
-        "en": "Nguyen Chiropractic and Acupuncture Wellness",
-        "es": "Nguyen Chiropractic and Acupuncture Wellness"
-      },
-      "description": {
-        "en": "Chiropractic care and acupuncture that address the root cause of your pain. Gentle adjustments, personalized treatment plans and same-week appointments.",
-        "es": "Atención quiropráctica y acupuntura que atienden la causa raíz de su dolor. Ajustes suaves, planes de tratamiento personalizados y citas en la misma semana."
-      }
+      "title": "Nguyen Chiropractic and Acupuncture Wellness",
+      "description": "Chiropractic care and acupuncture that address the root cause of your pain. Gentle adjustments, personalized treatment plans and same-week appointments."
     },
-    "locales": { "default": "en", "enabled": ["en", "es"] }
+    "locales": {
+      "default": "en",
+      "enabled": [
+        "en"
+      ]
+    }
   },
   "nav": [
-    { "label": { "en": "Home", "es": "Inicio" }, "href": "/" },
-    { "label": { "en": "About Us", "es": "Nosotros" }, "href": "/about" },
-    { "label": { "en": "Services", "es": "Servicios" }, "href": "/services" },
-    { "label": { "en": "Therapists", "es": "Terapeutas" }, "href": "/therapists" },
-    { "label": { "en": "Gallery", "es": "Galería" }, "href": "/gallery" },
-    { "label": { "en": "Blog", "es": "Blog" }, "href": "/blog" },
-    { "label": { "en": "FAQs", "es": "Preguntas" }, "href": "/faqs" },
-    { "label": { "en": "Contact", "es": "Contacto" }, "href": "/contact" }
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About Us",
+      "href": "/about"
+    },
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "Products",
+      "href": "/products"
+    },
+    {
+      "label": "Therapists",
+      "href": "/therapists"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "FAQs",
+      "href": "/faqs"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
   ],
   "footer": {
-    "about": {
-      "en": "We address the cause of your pain, not just the symptom. Chiropractic and acupuncture care for the whole family.",
-      "es": "Atendemos la causa de su dolor, no solo el síntoma. Cuidado quiropráctico y acupuntura para toda la familia."
-    },
-    "linksTitle": { "en": "Quick Links", "es": "Enlaces" },
-    "servicesTitle": { "en": "Our Services", "es": "Servicios" },
-    "contactTitle": { "en": "Get in Touch", "es": "Contáctenos" },
+    "about": "We address the cause of your pain, not just the symptom. Chiropractic and acupuncture care for the whole family.",
+    "linksTitle": "Quick Links",
+    "servicesTitle": "Our Services",
+    "contactTitle": "Get in Touch",
     "links": [
-      { "label": { "en": "Home", "es": "Inicio" }, "href": "/" },
-      { "label": { "en": "About Us", "es": "Nosotros" }, "href": "/about" },
-      { "label": { "en": "Blog", "es": "Blog" }, "href": "/blog" },
-      { "label": { "en": "Book Appointment", "es": "Agendar Cita" }, "href": "/appointment" },
-      { "label": { "en": "Contact", "es": "Contacto" }, "href": "/contact" }
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About Us",
+        "href": "/about"
+      },
+      {
+        "label": "Products",
+        "href": "/products"
+      },
+      {
+        "label": "Gallery",
+        "href": "/gallery"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      },
+      {
+        "label": "Book Appointment",
+        "href": "/appointment"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
     ],
-    "copyright": {
-      "en": "Nguyen Chiropractic and Acupuncture Wellness. All rights reserved.",
-      "es": "Nguyen Chiropractic and Acupuncture Wellness. Todos los derechos reservados."
-    }
+    "copyright": "Nguyen Chiropractic and Acupuncture Wellness. All rights reserved."
   },
   "home": {
     "sections": [
@@ -81,13 +136,10 @@
         "type": "hero",
         "enabled": true,
         "data": {
-          "sideText": { "en": "chiropractic • acupuncture", "es": "quiropráctica • acupuntura" },
-          "title": { "en": "Does Your Pain Stop You?", "es": "¿El Dolor Le Detiene?" },
-          "subtitle": {
-            "en": "Nguyen Chiropractic will find and treat your problem, not just your symptoms.",
-            "es": "Nguyen Chiropractic encuentra y trata su problema, no solo sus síntomas."
-          },
-          "ctaLabel": { "en": "Request an Appointment", "es": "Solicitar una Cita" },
+          "sideText": "chiropractic • acupuncture",
+          "title": "Does Your Pain Stop You?",
+          "subtitle": "Nguyen Chiropractic will find and treat your problem, not just your symptoms.",
+          "ctaLabel": "Request an Appointment",
           "ctaHref": "/appointment",
           "image": "/placeholder/hero"
         }
@@ -97,28 +149,31 @@
         "type": "welcome",
         "enabled": true,
         "data": {
-          "eyebrow": { "en": "Welcome to Nguyen Wellness", "es": "Bienvenido a Nguyen Wellness" },
-          "title": {
-            "en": "A Balanced Approach to Lasting Relief",
-            "es": "Un Enfoque Equilibrado para un Alivio Duradero"
-          },
-          "lead": {
-            "en": "Chiropractic precision combined with the ancient wisdom of acupuncture.",
-            "es": "La precisión quiropráctica combinada con la sabiduría milenaria de la acupuntura."
-          },
-          "body": {
-            "en": "Every patient begins with a full evaluation so we can understand what is truly causing the pain. From there we build a personalized plan that restores alignment, calms inflammation and gets you moving again — without surgery and without dependence on medication.",
-            "es": "Cada paciente comienza con una evaluación completa para entender qué está causando realmente el dolor. A partir de ahí creamos un plan personalizado que restaura la alineación, calma la inflamación y le devuelve el movimiento, sin cirugía y sin depender de medicamentos."
-          },
+          "eyebrow": "Welcome to Nguyen Wellness",
+          "title": "A Balanced Approach to Lasting Relief",
+          "lead": "Chiropractic precision combined with the ancient wisdom of acupuncture.",
+          "body": "Every patient begins with a full evaluation so we can understand what is truly causing the pain. From there we build a personalized plan that restores alignment, calms inflammation and gets you moving again — without surgery and without dependence on medication.",
           "image": "/placeholder/welcome-1",
           "imageSmall": "/placeholder/welcome-2",
           "features": [
-            { "icon": "shield", "label": { "en": "100% Satisfaction", "es": "100% Satisfacción" } },
-            { "icon": "user", "label": { "en": "One-on-One Care", "es": "Atención Personalizada" } },
-            { "icon": "wallet", "label": { "en": "Flexible & Cost-Effective", "es": "Flexible y Económico" } },
-            { "icon": "award", "label": { "en": "Licensed Practitioners", "es": "Profesionales Licenciados" } }
+            {
+              "icon": "shield",
+              "label": "100% Satisfaction"
+            },
+            {
+              "icon": "user",
+              "label": "One-on-One Care"
+            },
+            {
+              "icon": "wallet",
+              "label": "Flexible & Cost-Effective"
+            },
+            {
+              "icon": "award",
+              "label": "Licensed Practitioners"
+            }
           ],
-          "callLabel": { "en": "Call Us Today", "es": "Llámenos Hoy" },
+          "callLabel": "Call Us Today",
           "doctorImage": "/placeholder/avatar-1"
         }
       },
@@ -127,13 +182,22 @@
         "type": "services",
         "enabled": true,
         "data": {
-          "eyebrow": { "en": "Our Services", "es": "Nuestros Servicios" },
-          "title": { "en": "Chiropractic & Acupuncture Care", "es": "Quiropráctica y Acupuntura" },
-          "text": {
-            "en": "Treatments designed around your body, your history and your goals.",
-            "es": "Tratamientos diseñados según su cuerpo, su historial y sus metas."
-          },
+          "eyebrow": "Our Services",
+          "title": "Chiropractic & Acupuncture Care",
+          "text": "Treatments designed around your body, your history and your goals.",
           "limit": 6
+        }
+      },
+      {
+        "id": "products",
+        "type": "products",
+        "enabled": true,
+        "data": {
+          "eyebrow": "Clinic Store",
+          "title": "Products We Recommend",
+          "text": "The pillows, supports and recovery tools we hand to patients between visits.",
+          "limit": 4,
+          "ctaLabel": "See All Products"
         }
       },
       {
@@ -141,18 +205,12 @@
         "type": "doctor",
         "enabled": true,
         "data": {
-          "eyebrow": { "en": "Meet the Doctor", "es": "Conozca al Doctor" },
-          "name": { "en": "Dr. Nguyen, D.C., L.Ac.", "es": "Dr. Nguyen, D.C., L.Ac." },
-          "role": {
-            "en": "Doctor of Chiropractic & Licensed Acupuncturist",
-            "es": "Doctor en Quiropráctica y Acupunturista Licenciado"
-          },
-          "body": {
-            "en": "With more than fifteen years of clinical practice, Dr. Nguyen blends evidence-based chiropractic technique with traditional Chinese medicine. His philosophy is simple: listen first, examine thoroughly, and treat the source. Patients come for back pain, migraines, sciatica and sports injuries — and stay for the way they feel afterwards.",
-            "es": "Con más de quince años de práctica clínica, el Dr. Nguyen combina la técnica quiropráctica basada en evidencia con la medicina tradicional china. Su filosofía es sencilla: escuchar primero, examinar a fondo y tratar el origen. Los pacientes llegan por dolor de espalda, migrañas, sciática y lesiones deportivas, y se quedan por cómo se sienten después."
-          },
+          "eyebrow": "Meet the Doctor",
+          "name": "Dr. Nguyen, D.C., L.Ac.",
+          "role": "Doctor of Chiropractic & Licensed Acupuncturist",
+          "body": "With more than fifteen years of clinical practice, Dr. Nguyen blends evidence-based chiropractic technique with traditional Chinese medicine. His philosophy is simple: listen first, examine thoroughly, and treat the source. Patients come for back pain, migraines, sciatica and sports injuries — and stay for the way they feel afterwards.",
           "image": "/placeholder/doctor",
-          "ctaLabel": { "en": "Book a Consultation", "es": "Agendar una Consulta" },
+          "ctaLabel": "Book a Consultation",
           "ctaHref": "/appointment"
         }
       },
@@ -161,13 +219,10 @@
         "type": "team",
         "enabled": true,
         "data": {
-          "eyebrow": { "en": "Dedicated Team", "es": "Equipo Dedicado" },
-          "title": { "en": "Our Expert Therapists", "es": "Nuestros Terapeutas Expertos" },
-          "text": {
-            "en": "A small, senior team so every visit is handled by someone who knows your case.",
-            "es": "Un equipo pequeño y experimentado para que cada visita la atienda alguien que conoce su caso."
-          },
-          "linkLabel": { "en": "View All Therapists", "es": "Ver Todo el Equipo" },
+          "eyebrow": "Dedicated Team",
+          "title": "Our Expert Therapists",
+          "text": "A small, senior team so every visit is handled by someone who knows your case.",
+          "linkLabel": "View All Therapists",
           "linkHref": "/therapists"
         }
       },
@@ -177,10 +232,30 @@
         "enabled": true,
         "data": {
           "items": [
-            { "icon": "smile", "value": 1700, "suffix": "+", "label": { "en": "Happy Patients", "es": "Pacientes Felices" } },
-            { "icon": "shield", "value": 100, "suffix": "%", "label": { "en": "Satisfaction Guarantee", "es": "Garantía de Satisfacción" } },
-            { "icon": "people", "value": 12, "suffix": "+", "label": { "en": "Therapists & Staff", "es": "Terapeutas y Personal" } },
-            { "icon": "award", "value": 15, "suffix": "+", "label": { "en": "Years of Experience", "es": "Años de Experiencia" } }
+            {
+              "icon": "smile",
+              "value": 1700,
+              "suffix": "+",
+              "label": "Happy Patients"
+            },
+            {
+              "icon": "shield",
+              "value": 100,
+              "suffix": "%",
+              "label": "Satisfaction Guarantee"
+            },
+            {
+              "icon": "people",
+              "value": 12,
+              "suffix": "+",
+              "label": "Therapists & Staff"
+            },
+            {
+              "icon": "award",
+              "value": 15,
+              "suffix": "+",
+              "label": "Years of Experience"
+            }
           ]
         }
       },
@@ -189,43 +264,28 @@
         "type": "conditions",
         "enabled": true,
         "data": {
-          "eyebrow": { "en": "Who We Are", "es": "Quiénes Somos" },
-          "title": { "en": "Many Problems Recover Under One Roof", "es": "Muchos Problemas se Recuperan Bajo un Mismo Techo" },
-          "text": {
-            "en": "From the lower back to the neck, we treat the areas where pain most often begins.",
-            "es": "Desde la zona lumbar hasta el cuello, tratamos las áreas donde el dolor suele comenzar."
-          },
+          "eyebrow": "Who We Are",
+          "title": "Many Problems Recover Under One Roof",
+          "text": "From the lower back to the neck, we treat the areas where pain most often begins.",
           "items": [
             {
-              "title": { "en": "Lower Back & Sciatica", "es": "Espalda Baja y Sciática" },
-              "body": {
-                "en": "Disc pressure, poor posture and long hours seated are the most common causes of lumbar pain. We combine adjustments, decompression and targeted acupuncture to release the nerve and rebuild support.",
-                "es": "La presión discal, la mala postura y las largas horas sentado son las causas más comunes del dolor lumbar. Combinamos ajustes, descompresión y acupuntura dirigida para liberar el nervio y recuperar el soporte."
-              },
+              "title": "Lower Back & Sciatica",
+              "body": "Disc pressure, poor posture and long hours seated are the most common causes of lumbar pain. We combine adjustments, decompression and targeted acupuncture to release the nerve and rebuild support.",
               "image": "/placeholder/condition-1"
             },
             {
-              "title": { "en": "Mid Back & Ribs", "es": "Espalda Media y Costillas" },
-              "body": {
-                "en": "Thoracic restriction shows up as stiffness, shallow breathing and a burning ache between the shoulder blades. Mobilization plus soft-tissue work restores rotation and comfort.",
-                "es": "La restricción torácica aparece como rigidez, respiración corta y un ardor entre los omóplatos. La movilización junto al trabajo de tejidos blandos devuelve la rotación y la comodidad."
-              },
+              "title": "Mid Back & Ribs",
+              "body": "Thoracic restriction shows up as stiffness, shallow breathing and a burning ache between the shoulder blades. Mobilization plus soft-tissue work restores rotation and comfort.",
               "image": "/placeholder/condition-2"
             },
             {
-              "title": { "en": "Shoulders & Arms", "es": "Hombros y Brazos" },
-              "body": {
-                "en": "Rotator cuff strain, frozen shoulder and numbness down the arm usually trace back to the neck. We treat both ends of the chain so the relief actually lasts.",
-                "es": "La tensión del manguito rotador, el hombro congelado y el adormecimiento del brazo suelen originarse en el cuello. Tratamos ambos extremos de la cadena para que el alivio realmente dure."
-              },
+              "title": "Shoulders & Arms",
+              "body": "Rotator cuff strain, frozen shoulder and numbness down the arm usually trace back to the neck. We treat both ends of the chain so the relief actually lasts.",
               "image": "/placeholder/condition-3"
             },
             {
-              "title": { "en": "Head & Neck", "es": "Cabeza y Cuello" },
-              "body": {
-                "en": "Tension headaches, migraines and jaw pain respond remarkably well to cervical adjustments combined with acupuncture points that calm the nervous system.",
-                "es": "Los dolores de cabeza tensionales, las migrañas y el dolor de mandíbula responden muy bien a los ajustes cervicales combinados con puntos de acupuntura que calman el sistema nervioso."
-              },
+              "title": "Head & Neck",
+              "body": "Tension headaches, migraines and jaw pain respond remarkably well to cervical adjustments combined with acupuncture points that calm the nervous system.",
               "image": "/placeholder/condition-4"
             }
           ]
@@ -236,21 +296,24 @@
         "type": "commitment",
         "enabled": true,
         "data": {
-          "eyebrow": { "en": "Leading in Wellness Care", "es": "Líderes en Bienestar" },
-          "title": { "en": "Committed to Providing the Best Therapy", "es": "Comprometidos a Brindar la Mejor Terapia" },
-          "body": {
-            "en": "We measure our work by how quickly you return to the things you love. Clear treatment plans, honest timelines and progress you can feel week by week.",
-            "es": "Medimos nuestro trabajo por la rapidez con la que usted vuelve a lo que ama. Planes de tratamiento claros, plazos honestos y un progreso que se siente semana a semana."
-          },
+          "eyebrow": "Leading in Wellness Care",
+          "title": "Committed to Providing the Best Therapy",
+          "body": "We measure our work by how quickly you return to the things you love. Clear treatment plans, honest timelines and progress you can feel week by week.",
           "bars": [
-            { "label": { "en": "Patient Success Rate", "es": "Tasa de Éxito" }, "value": 96 },
-            { "label": { "en": "Pain Reduction in 4 Weeks", "es": "Reducción del Dolor en 4 Semanas" }, "value": 87 }
+            {
+              "label": "Patient Success Rate",
+              "value": 96
+            },
+            {
+              "label": "Pain Reduction in 4 Weeks",
+              "value": 87
+            }
           ],
           "image": "/placeholder/commitment",
           "badgeValue": 2500,
           "badgeSuffix": "+",
-          "badgeLabel": { "en": "Satisfied Patients", "es": "Pacientes Satisfechos" },
-          "ctaLabel": { "en": "Explore Our Services", "es": "Ver Nuestros Servicios" },
+          "badgeLabel": "Satisfied Patients",
+          "ctaLabel": "Explore Our Services",
           "ctaHref": "/services"
         }
       },
@@ -259,8 +322,8 @@
         "type": "testimonials",
         "enabled": true,
         "data": {
-          "eyebrow": { "en": "Testimonials", "es": "Testimonios" },
-          "title": { "en": "What Our Patients Are Saying", "es": "Lo Que Dicen Nuestros Pacientes" }
+          "eyebrow": "Testimonials",
+          "title": "What Our Patients Are Saying"
         }
       },
       {
@@ -268,13 +331,10 @@
         "type": "blog",
         "enabled": true,
         "data": {
-          "eyebrow": { "en": "Clinic News", "es": "Noticias" },
-          "title": { "en": "Latest Articles & Advice", "es": "Últimos Artículos y Consejos" },
-          "text": {
-            "en": "Practical guidance from our practitioners on posture, recovery and staying pain free.",
-            "es": "Consejos prácticos de nuestros especialistas sobre postura, recuperación y vivir sin dolor."
-          },
-          "ctaLabel": { "en": "Explore More", "es": "Ver Más" }
+          "eyebrow": "Clinic News",
+          "title": "Latest Articles & Advice",
+          "text": "Practical guidance from our practitioners on posture, recovery and staying pain free.",
+          "ctaLabel": "Explore More"
         }
       },
       {
@@ -282,7 +342,7 @@
         "type": "map",
         "enabled": true,
         "data": {
-          "title": { "en": "Office Address", "es": "Dirección de la Oficina" }
+          "title": "Office Address"
         }
       }
     ]
@@ -290,91 +350,89 @@
   "pages": {
     "about": {
       "hero": {
-        "title": { "en": "About Us", "es": "Nosotros" },
-        "subtitle": { "en": "Care built on listening", "es": "Cuidado basado en escuchar" }
+        "title": "About Us",
+        "subtitle": "Care built on listening"
       },
       "story": {
-        "eyebrow": { "en": "Our Story", "es": "Nuestra Historia" },
-        "title": { "en": "Two Traditions, One Treatment Plan", "es": "Dos Tradiciones, un Solo Plan" },
-        "body": {
-          "en": "Nguyen Chiropractic and Acupuncture Wellness was founded on a simple observation: patients get better faster when structural care and energetic care work together. Our clinic was designed around that idea. A chiropractic adjustment restores the mechanics of the spine; acupuncture calms the nervous system and improves circulation so the correction holds. Together they shorten recovery and reduce the chance that the pain returns.\n\nWe keep our schedule intentionally light so no appointment feels rushed. You will always know what we found, what we are doing about it, and how long it should take.",
-          "es": "Nguyen Chiropractic and Acupuncture Wellness nació de una observación sencilla: los pacientes mejoran más rápido cuando el cuidado estructural y el energético trabajan juntos. Nuestra clínica se diseñó alrededor de esa idea. Un ajuste quiropráctico restaura la mecánica de la columna; la acupuntura calma el sistema nervioso y mejora la circulación para que la corrección se mantenga. Juntas acortan la recuperación y reducen la probabilidad de que el dolor regrese.\n\nMantenemos una agenda intencionalmente ligera para que ninguna cita se sienta apresurada. Siempre sabrá qué encontramos, qué estamos haciendo al respecto y cuánto debería tomar."
-        },
+        "eyebrow": "Our Story",
+        "title": "Two Traditions, One Treatment Plan",
+        "body": "Nguyen Chiropractic and Acupuncture Wellness was founded on a simple observation: patients get better faster when structural care and energetic care work together. Our clinic was designed around that idea. A chiropractic adjustment restores the mechanics of the spine; acupuncture calms the nervous system and improves circulation so the correction holds. Together they shorten recovery and reduce the chance that the pain returns.\n\nWe keep our schedule intentionally light so no appointment feels rushed. You will always know what we found, what we are doing about it, and how long it should take.",
         "image": "/placeholder/about"
       },
       "values": [
         {
           "icon": "stethoscope",
-          "title": { "en": "Thorough Evaluation", "es": "Evaluación Completa" },
-          "body": { "en": "A full history, posture and range-of-motion exam before any treatment begins.", "es": "Historial completo, postura y examen de movilidad antes de iniciar cualquier tratamiento." }
+          "title": "Thorough Evaluation",
+          "body": "A full history, posture and range-of-motion exam before any treatment begins."
         },
         {
           "icon": "heart",
-          "title": { "en": "Gentle Techniques", "es": "Técnicas Suaves" },
-          "body": { "en": "Low-force options for seniors, children and anyone nervous about adjustments.", "es": "Opciones de baja fuerza para adultos mayores, niños y quienes sienten temor a los ajustes." }
+          "title": "Gentle Techniques",
+          "body": "Low-force options for seniors, children and anyone nervous about adjustments."
         },
         {
           "icon": "leaf",
-          "title": { "en": "Drug-Free Relief", "es": "Alivio Sin Fármacos" },
-          "body": { "en": "Care that works with your body instead of masking the signal it is sending.", "es": "Cuidado que trabaja con su cuerpo en lugar de ocultar la señal que le envía." }
+          "title": "Drug-Free Relief",
+          "body": "Care that works with your body instead of masking the signal it is sending."
         }
       ]
     },
     "services": {
       "hero": {
-        "title": { "en": "Our Services", "es": "Nuestros Servicios" },
-        "subtitle": { "en": "Treatments for every stage of recovery", "es": "Tratamientos para cada etapa de la recuperación" }
+        "title": "Our Services",
+        "subtitle": "Treatments for every stage of recovery"
       }
     },
     "therapists": {
       "hero": {
-        "title": { "en": "Our Therapists", "es": "Nuestros Terapeutas" },
-        "subtitle": { "en": "The people who will take care of you", "es": "Las personas que le atenderán" }
+        "title": "Our Therapists",
+        "subtitle": "The people who will take care of you"
       }
     },
     "gallery": {
       "hero": {
-        "title": { "en": "Gallery", "es": "Galería" },
-        "subtitle": { "en": "Inside our clinic", "es": "Dentro de nuestra clínica" }
+        "title": "Gallery",
+        "subtitle": "Inside our clinic"
       }
     },
     "blog": {
       "hero": {
-        "title": { "en": "Blog", "es": "Blog" },
-        "subtitle": { "en": "Advice from our practitioners", "es": "Consejos de nuestros especialistas" }
+        "title": "Blog",
+        "subtitle": "Advice from our practitioners"
       }
     },
     "faqs": {
       "hero": {
-        "title": { "en": "Frequently Asked Questions", "es": "Preguntas Frecuentes" },
-        "subtitle": { "en": "Everything new patients ask us", "es": "Todo lo que preguntan los nuevos pacientes" }
+        "title": "Frequently Asked Questions",
+        "subtitle": "Everything new patients ask us"
       }
     },
     "testimonials": {
       "hero": {
-        "title": { "en": "Testimonials", "es": "Testimonios" },
-        "subtitle": { "en": "In our patients' own words", "es": "En palabras de nuestros pacientes" }
+        "title": "Testimonials",
+        "subtitle": "In our patients' own words"
       }
     },
     "appointment": {
       "hero": {
-        "title": { "en": "Request an Appointment", "es": "Solicitar una Cita" },
-        "subtitle": { "en": "We reply within one business day", "es": "Respondemos en un día laborable" }
+        "title": "Request an Appointment",
+        "subtitle": "We reply within one business day"
       },
-      "intro": {
-        "en": "Fill out the form and our front desk will confirm your time by phone or email. If you are in acute pain, call us directly and we will find room the same day.",
-        "es": "Complete el formulario y nuestra recepción confirmará su horario por teléfono o correo. Si tiene dolor agudo, llámenos directamente y buscaremos espacio el mismo día."
-      }
+      "intro": "Fill out the form and our front desk will confirm your time by phone or email. If you are in acute pain, call us directly and we will find room the same day."
     },
     "contact": {
       "hero": {
-        "title": { "en": "Contact Us", "es": "Contáctenos" },
-        "subtitle": { "en": "We are here to help", "es": "Estamos para ayudarle" }
+        "title": "Contact Us",
+        "subtitle": "We are here to help"
       },
-      "intro": {
-        "en": "Questions about insurance, treatment or your first visit? Send us a message and we will get back to you shortly.",
-        "es": "¿Preguntas sobre seguros, tratamientos o su primera visita? Envíenos un mensaje y le responderemos en breve."
-      }
+      "intro": "Questions about insurance, treatment or your first visit? Send us a message and we will get back to you shortly."
+    },
+    "products": {
+      "hero": {
+        "title": "Products",
+        "subtitle": "What we recommend to our own patients"
+      },
+      "intro": "Everything on this page is something we use in the treatment room or hand to patients between visits. Prices are what you pay in clinic — tell us which one you are interested in and we will have it ready at your next appointment."
     }
   },
   "services": [
@@ -383,212 +441,164 @@
       "slug": "chiropractic-adjustment",
       "icon": "spine",
       "image": "/placeholder/service-1",
-      "title": { "en": "Chiropractic Adjustment", "es": "Ajuste Quiropráctico" },
-      "excerpt": {
-        "en": "Precise, gentle corrections that restore joint motion and take pressure off irritated nerves.",
-        "es": "Correcciones precisas y suaves que restauran el movimiento articular y liberan los nervios irritados."
-      },
-      "body": {
-        "en": "An adjustment is a controlled, specific force applied to a joint that has lost normal motion. Restoring that motion reduces nerve irritation, relaxes the muscles guarding the area and lets inflammation drain. We use hands-on and instrument-assisted techniques, and we always choose the gentlest option that will do the job.",
-        "es": "Un ajuste es una fuerza controlada y específica aplicada a una articulación que ha perdido su movimiento normal. Recuperar ese movimiento reduce la irritación nerviosa, relaja los músculos que protegen la zona y permite drenar la inflamación. Usamos técnicas manuales e instrumentales, y siempre elegimos la opción más suave que resuelva el problema."
-      }
+      "title": "Chiropractic Adjustment",
+      "excerpt": "Precise, gentle corrections that restore joint motion and take pressure off irritated nerves.",
+      "body": "An adjustment is a controlled, specific force applied to a joint that has lost normal motion. Restoring that motion reduces nerve irritation, relaxes the muscles guarding the area and lets inflammation drain. We use hands-on and instrument-assisted techniques, and we always choose the gentlest option that will do the job."
     },
     {
       "id": "s2",
       "slug": "acupuncture",
       "icon": "acupuncture",
       "image": "/placeholder/service-2",
-      "title": { "en": "Acupuncture", "es": "Acupuntura" },
-      "excerpt": {
-        "en": "Fine, sterile needles placed to calm pain signals, reduce inflammation and improve circulation.",
-        "es": "Agujas finas y estériles que calman las señales de dolor, reducen la inflamación y mejoran la circulación."
-      },
-      "body": {
-        "en": "Acupuncture is one of the most studied drug-free treatments for chronic pain. Needles the width of a hair are placed at specific points to trigger your body's own pain-relief chemistry. Most patients feel deeply relaxed during the session and notice a change in symptoms within three to five visits.",
-        "es": "La acupuntura es uno de los tratamientos sin fármacos más estudiados para el dolor crónico. Se colocan agujas del grosor de un cabello en puntos específicos para activar la química analgésica del propio cuerpo. La mayoría de los pacientes se siente profundamente relajada durante la sesión y nota cambios entre la tercera y quinta visita."
-      }
+      "title": "Acupuncture",
+      "excerpt": "Fine, sterile needles placed to calm pain signals, reduce inflammation and improve circulation.",
+      "body": "Acupuncture is one of the most studied drug-free treatments for chronic pain. Needles the width of a hair are placed at specific points to trigger your body's own pain-relief chemistry. Most patients feel deeply relaxed during the session and notice a change in symptoms within three to five visits."
     },
     {
       "id": "s3",
       "slug": "spinal-decompression",
       "icon": "bolt",
       "image": "/placeholder/service-3",
-      "title": { "en": "Spinal Decompression", "es": "Descompresión Espinal" },
-      "excerpt": {
-        "en": "Gentle traction that relieves disc pressure — a non-surgical option for herniation and sciatica.",
-        "es": "Tracción suave que alivia la presión discal: una opción no quirúrgica para hernias y sciática."
-      },
-      "body": {
-        "en": "Decompression uses a computer-controlled table to create negative pressure inside the disc, drawing bulging material inward and pulling water and nutrients back in. It is comfortable, requires no recovery time, and is often the difference between managing sciatica and resolving it.",
-        "es": "La descompresión utiliza una mesa controlada por computadora para crear presión negativa dentro del disco, atrayendo el material abultado hacia adentro y devolviendo agua y nutrientes. Es cómoda, no requiere tiempo de recuperación y muchas veces marca la diferencia entre manejar la sciática y resolverla."
-      }
+      "title": "Spinal Decompression",
+      "excerpt": "Gentle traction that relieves disc pressure — a non-surgical option for herniation and sciatica.",
+      "body": "Decompression uses a computer-controlled table to create negative pressure inside the disc, drawing bulging material inward and pulling water and nutrients back in. It is comfortable, requires no recovery time, and is often the difference between managing sciatica and resolving it."
     },
     {
       "id": "s4",
       "slug": "massage-therapy",
       "icon": "hand",
       "image": "/placeholder/service-4",
-      "title": { "en": "Massage Therapy", "es": "Terapia de Masaje" },
-      "excerpt": {
-        "en": "Deep tissue and trigger-point work that prepares the body for adjustment and holds it there.",
-        "es": "Trabajo profundo y de puntos gatillo que prepara el cuerpo para el ajuste y lo mantiene."
-      },
-      "body": {
-        "en": "Muscles are what hold a correction in place. Our therapists release the tight bands and trigger points that keep pulling joints out of position, which means fewer visits and longer-lasting relief. Sessions are tailored from light lymphatic work to deep clinical pressure.",
-        "es": "Los músculos son los que mantienen una corrección en su lugar. Nuestros terapeutas liberan las bandas tensas y los puntos gatillo que sacan las articulaciones de posición, lo que significa menos visitas y un alivio más duradero. Las sesiones se adaptan desde trabajo linfático ligero hasta presión clínica profunda."
-      }
+      "title": "Massage Therapy",
+      "excerpt": "Deep tissue and trigger-point work that prepares the body for adjustment and holds it there.",
+      "body": "Muscles are what hold a correction in place. Our therapists release the tight bands and trigger points that keep pulling joints out of position, which means fewer visits and longer-lasting relief. Sessions are tailored from light lymphatic work to deep clinical pressure."
     },
     {
       "id": "s5",
       "slug": "cupping-therapy",
       "icon": "leaf",
       "image": "/placeholder/service-5",
-      "title": { "en": "Cupping Therapy", "es": "Terapia de Ventosas" },
-      "excerpt": {
-        "en": "Suction that lifts tissue, increases blood flow and frees fascia that stretching cannot reach.",
-        "es": "Succión que eleva el tejido, aumenta el flujo sanguíneo y libera la fascia que el estiramiento no alcanza."
-      },
-      "body": {
-        "en": "Where massage compresses, cupping decompresses. The suction separates layers of fascia that have become stuck together, flooding the area with fresh blood. It is especially effective for stubborn upper-back tension, athletic recovery and long-standing scar tissue.",
-        "es": "Donde el masaje comprime, la ventosa descomprime. La succión separa las capas de fascia que se han adherido, inundando la zona con sangre nueva. Es especialmente efectiva para la tensión persistente de la espalda alta, la recuperación deportiva y el tejido cicatricial antiguo."
-      }
+      "title": "Cupping Therapy",
+      "excerpt": "Suction that lifts tissue, increases blood flow and frees fascia that stretching cannot reach.",
+      "body": "Where massage compresses, cupping decompresses. The suction separates layers of fascia that have become stuck together, flooding the area with fresh blood. It is especially effective for stubborn upper-back tension, athletic recovery and long-standing scar tissue."
     },
     {
       "id": "s6",
       "slug": "sports-injury-rehab",
       "icon": "bolt",
       "image": "/placeholder/service-6",
-      "title": { "en": "Sports Injury Rehab", "es": "Rehabilitación Deportiva" },
-      "excerpt": {
-        "en": "Return-to-play programs that rebuild strength and mechanics, not just calm the pain down.",
-        "es": "Programas de retorno al deporte que reconstruyen fuerza y mecánica, no solo calman el dolor."
-      },
-      "body": {
-        "en": "Sprains, strains and overuse injuries need three things: settle the inflammation, restore the motion, then rebuild the strength through full range. We progress you through each phase with clear benchmarks so you know exactly when it is safe to compete again.",
-        "es": "Los esguinces, distensiones y lesiones por sobreuso necesitan tres cosas: calmar la inflamación, restaurar el movimiento y luego reconstruir la fuerza en todo el rango. Le guiamos por cada fase con indicadores claros para que sepa exactamente cuándo es seguro volver a competir."
-      }
+      "title": "Sports Injury Rehab",
+      "excerpt": "Return-to-play programs that rebuild strength and mechanics, not just calm the pain down.",
+      "body": "Sprains, strains and overuse injuries need three things: settle the inflammation, restore the motion, then rebuild the strength through full range. We progress you through each phase with clear benchmarks so you know exactly when it is safe to compete again."
     },
     {
       "id": "s7",
       "slug": "auto-accident-injury",
       "icon": "shield",
       "image": "/placeholder/service-7",
-      "title": { "en": "Auto Accident Injury", "es": "Lesiones por Accidente" },
-      "excerpt": {
-        "en": "Whiplash and soft-tissue care with the documentation your insurance claim requires.",
-        "es": "Atención de latigazo cervical y tejidos blandos con la documentación que exige su seguro."
-      },
-      "body": {
-        "en": "Whiplash symptoms often appear days after a collision, when the adrenaline fades. Early treatment prevents scar tissue from setting in the wrong pattern. We examine, treat and document thoroughly, and we coordinate directly with attorneys and insurers when needed.",
-        "es": "Los síntomas del latigazo cervical suelen aparecer días después del choque, cuando baja la adrenalina. El tratamiento temprano evita que el tejido cicatricial se forme en el patrón equivocado. Examinamos, tratamos y documentamos a fondo, y coordinamos directamente con abogados y aseguradoras cuando es necesario."
-      }
+      "title": "Auto Accident Injury",
+      "excerpt": "Whiplash and soft-tissue care with the documentation your insurance claim requires.",
+      "body": "Whiplash symptoms often appear days after a collision, when the adrenaline fades. Early treatment prevents scar tissue from setting in the wrong pattern. We examine, treat and document thoroughly, and we coordinate directly with attorneys and insurers when needed."
     },
     {
       "id": "s8",
       "slug": "prenatal-chiropractic",
       "icon": "heart",
       "image": "/placeholder/service-8",
-      "title": { "en": "Prenatal Chiropractic", "es": "Quiropráctica Prenatal" },
-      "excerpt": {
-        "en": "Pregnancy-safe techniques for pelvic balance, lower-back comfort and easier delivery.",
-        "es": "Técnicas seguras en el embarazo para equilibrio pélvico, comodidad lumbar y un parto más fácil."
-      },
-      "body": {
-        "en": "As the body changes through pregnancy, the pelvis and lower back carry the load. Using specialized tables and low-force techniques, we keep the pelvis balanced, relieve round-ligament and sciatic pain, and help create the room baby needs.",
-        "es": "A medida que el cuerpo cambia durante el embarazo, la pelvis y la espalda baja cargan el peso. Con mesas especializadas y técnicas de baja fuerza, mantenemos la pelvis equilibrada, aliviamos el dolor del ligamento redondo y el sciático, y ayudamos a crear el espacio que el bebé necesita."
-      }
+      "title": "Prenatal Chiropractic",
+      "excerpt": "Pregnancy-safe techniques for pelvic balance, lower-back comfort and easier delivery.",
+      "body": "As the body changes through pregnancy, the pelvis and lower back carry the load. Using specialized tables and low-force techniques, we keep the pelvis balanced, relieve round-ligament and sciatic pain, and help create the room baby needs."
     }
   ],
   "team": [
     {
       "id": "t1",
       "name": "Dr. Nguyen, D.C., L.Ac.",
-      "role": { "en": "Founder · Chiropractor & Acupuncturist", "es": "Fundador · Quiropráctico y Acupunturista" },
-      "bio": {
-        "en": "Fifteen years of combined chiropractic and Chinese medicine practice, with a focus on chronic back pain and migraines.",
-        "es": "Quince años de práctica combinada en quiropráctica y medicina china, con enfoque en dolor de espalda crónico y migrañas."
-      },
+      "role": "Founder · Chiropractor & Acupuncturist",
+      "bio": "Fifteen years of combined chiropractic and Chinese medicine practice, with a focus on chronic back pain and migraines.",
       "image": "/placeholder/avatar-1",
-      "social": [{ "network": "facebook", "url": "#" }, { "network": "instagram", "url": "#" }]
+      "social": [
+        {
+          "network": "facebook",
+          "url": "#"
+        },
+        {
+          "network": "instagram",
+          "url": "#"
+        }
+      ]
     },
     {
       "id": "t2",
       "name": "Sarah Kim, D.C.",
-      "role": { "en": "Chiropractor · Sports Rehab", "es": "Quiropráctica · Rehabilitación Deportiva" },
-      "bio": {
-        "en": "Works with runners and weekend athletes on return-to-play programs and injury prevention.",
-        "es": "Trabaja con corredores y atletas amateurs en programas de retorno al deporte y prevención."
-      },
+      "role": "Chiropractor · Sports Rehab",
+      "bio": "Works with runners and weekend athletes on return-to-play programs and injury prevention.",
       "image": "/placeholder/avatar-2",
-      "social": [{ "network": "instagram", "url": "#" }]
+      "social": [
+        {
+          "network": "instagram",
+          "url": "#"
+        }
+      ]
     },
     {
       "id": "t3",
       "name": "Marcus Lee, L.Ac.",
-      "role": { "en": "Licensed Acupuncturist", "es": "Acupunturista Licenciado" },
-      "bio": {
-        "en": "Specializes in pain management, stress and sleep using classical acupuncture protocols.",
-        "es": "Especializado en manejo del dolor, estrés y sueño con protocolos clásicos de acupuntura."
-      },
+      "role": "Licensed Acupuncturist",
+      "bio": "Specializes in pain management, stress and sleep using classical acupuncture protocols.",
       "image": "/placeholder/avatar-3",
-      "social": [{ "network": "facebook", "url": "#" }]
+      "social": [
+        {
+          "network": "facebook",
+          "url": "#"
+        }
+      ]
     },
     {
       "id": "t4",
       "name": "Elena Torres, LMT",
-      "role": { "en": "Clinical Massage Therapist", "es": "Terapeuta de Masaje Clínico" },
-      "bio": {
-        "en": "Deep tissue, trigger point and prenatal massage with a focus on postural correction.",
-        "es": "Masaje profundo, puntos gatillo y prenatal, con enfoque en corrección postural."
-      },
+      "role": "Clinical Massage Therapist",
+      "bio": "Deep tissue, trigger point and prenatal massage with a focus on postural correction.",
       "image": "/placeholder/avatar-4",
-      "social": [{ "network": "instagram", "url": "#" }]
+      "social": [
+        {
+          "network": "instagram",
+          "url": "#"
+        }
+      ]
     }
   ],
   "testimonials": [
     {
       "id": "r1",
       "name": "Peter J.",
-      "role": { "en": "Patient · Lower back pain", "es": "Paciente · Dolor lumbar" },
+      "role": "Patient · Lower back pain",
       "rating": 5,
       "image": "/placeholder/avatar-5",
-      "text": {
-        "en": "I had lived with lower back pain for six years and had accepted it. Four weeks here and I am back on the golf course. What impressed me most was that they explained exactly what was wrong before touching me.",
-        "es": "Viví con dolor lumbar durante seis años y ya lo había aceptado. Cuatro semanas aquí y volví al campo de golf. Lo que más me impresionó fue que me explicaron exactamente qué estaba mal antes de tocarme."
-      }
+      "text": "I had lived with lower back pain for six years and had accepted it. Four weeks here and I am back on the golf course. What impressed me most was that they explained exactly what was wrong before touching me."
     },
     {
       "id": "r2",
       "name": "Laura F.",
-      "role": { "en": "Patient · Migraines", "es": "Paciente · Migrañas" },
+      "role": "Patient · Migraines",
       "rating": 5,
       "image": "/placeholder/avatar-6",
-      "text": {
-        "en": "Migraines three times a week, down to maybe one a month. The combination of adjustments and acupuncture did what medication never managed to do for me.",
-        "es": "Tenía migrañas tres veces por semana y ahora quizás una al mes. La combinación de ajustes y acupuntura logró lo que los medicamentos nunca consiguieron."
-      }
+      "text": "Migraines three times a week, down to maybe one a month. The combination of adjustments and acupuncture did what medication never managed to do for me."
     },
     {
       "id": "r3",
       "name": "Daniel R.",
-      "role": { "en": "Patient · Auto accident", "es": "Paciente · Accidente de auto" },
+      "role": "Patient · Auto accident",
       "rating": 5,
       "image": "/placeholder/avatar-7",
-      "text": {
-        "en": "After my accident I could barely turn my head. They handled all the insurance paperwork and I never felt like a number. Genuinely grateful.",
-        "es": "Después de mi accidente apenas podía girar la cabeza. Se encargaron de todo el papeleo del seguro y nunca me sentí como un número. Muy agradecido."
-      }
+      "text": "After my accident I could barely turn my head. They handled all the insurance paperwork and I never felt like a number. Genuinely grateful."
     },
     {
       "id": "r4",
       "name": "Anna M.",
-      "role": { "en": "Patient · Prenatal care", "es": "Paciente · Cuidado prenatal" },
+      "role": "Patient · Prenatal care",
       "rating": 5,
       "image": "/placeholder/avatar-8",
-      "text": {
-        "en": "I came in at 28 weeks barely able to sleep. The prenatal adjustments gave me my nights back, and the staff made me feel completely safe the whole time.",
-        "es": "Llegué a las 28 semanas casi sin poder dormir. Los ajustes prenatales me devolvieron las noches y el personal me hizo sentir totalmente segura."
-      }
+      "text": "I came in at 28 weeks barely able to sleep. The prenatal adjustments gave me my nights back, and the staff made me feel completely safe the whole time."
     }
   ],
   "posts": [
@@ -598,18 +608,9 @@
       "date": "2026-08-18",
       "image": "/placeholder/blog-1",
       "author": "Dr. Nguyen",
-      "title": {
-        "en": "Five Desk Habits That Quietly Cause Back Pain",
-        "es": "Cinco Hábitos de Oficina que Causan Dolor de Espalda"
-      },
-      "excerpt": {
-        "en": "Most of the lumbar pain we treat is built one workday at a time. Here is what to change first.",
-        "es": "La mayoría del dolor lumbar que tratamos se construye jornada a jornada. Esto es lo que debe cambiar primero."
-      },
-      "body": {
-        "en": "Sitting is not the enemy — sitting still is. The spine feeds its discs through movement, and eight uninterrupted hours in a chair starves them.\n\nStart with your monitor. If the top of the screen sits below eye level, your head drifts forward, and every inch forward adds roughly ten pounds of load to your neck and upper back. Raise it.\n\nNext, your feet. Crossed legs tilt the pelvis and rotate the lumbar spine for hours at a time. Keep both feet flat, hips slightly above knees.\n\nThird, the armrests. Arms unsupported means the shoulders hang from the neck muscles all day. Set the rests so your elbows land naturally at ninety degrees.\n\nFourth, the wallet. A thick wallet in a back pocket lifts one side of the pelvis every time you sit. It sounds trivial; we correct the resulting imbalance constantly.\n\nFinally, set a timer. Standing and walking for two minutes every half hour does more for disc health than any chair on the market.",
-        "es": "Sentarse no es el enemigo; el problema es quedarse quieto. La columna alimenta sus discos a través del movimiento, y ocho horas ininterrumpidas en una silla los deja sin nutrición.\n\nEmpiece por su monitor. Si la parte superior de la pantalla queda debajo del nivel de los ojos, la cabeza se desplaza hacia adelante, y cada centímetro añade una carga considerable al cuello y la espalda alta. Elévelo.\n\nSiga con los pies. Cruzar las piernas inclina la pelvis y rota la columna lumbar durante horas. Mantenga ambos pies planos y las caderas ligeramente por encima de las rodillas.\n\nTercero, los reposabrazos. Sin apoyo, los hombros cuelgan de los músculos del cuello todo el día. Ajústelos para que los codos queden a noventa grados.\n\nCuarto, la cartera. Una cartera gruesa en el bolsillo trasero eleva un lado de la pelvis cada vez que se sienta. Parece trivial, pero corregimos ese desequilibrio constantemente.\n\nPor último, ponga una alarma. Levantarse y caminar dos minutos cada media hora hace más por la salud discal que cualquier silla del mercado."
-      }
+      "title": "Five Desk Habits That Quietly Cause Back Pain",
+      "excerpt": "Most of the lumbar pain we treat is built one workday at a time. Here is what to change first.",
+      "body": "Sitting is not the enemy — sitting still is. The spine feeds its discs through movement, and eight uninterrupted hours in a chair starves them.\n\nStart with your monitor. If the top of the screen sits below eye level, your head drifts forward, and every inch forward adds roughly ten pounds of load to your neck and upper back. Raise it.\n\nNext, your feet. Crossed legs tilt the pelvis and rotate the lumbar spine for hours at a time. Keep both feet flat, hips slightly above knees.\n\nThird, the armrests. Arms unsupported means the shoulders hang from the neck muscles all day. Set the rests so your elbows land naturally at ninety degrees.\n\nFourth, the wallet. A thick wallet in a back pocket lifts one side of the pelvis every time you sit. It sounds trivial; we correct the resulting imbalance constantly.\n\nFinally, set a timer. Standing and walking for two minutes every half hour does more for disc health than any chair on the market."
     },
     {
       "id": "p2",
@@ -617,18 +618,9 @@
       "date": "2026-07-29",
       "image": "/placeholder/blog-2",
       "author": "Marcus Lee, L.Ac.",
-      "title": {
-        "en": "What Acupuncture Actually Does to Pain",
-        "es": "Qué le Hace Realmente la Acupuntura al Dolor"
-      },
-      "excerpt": {
-        "en": "No mysticism required. Here is the physiology behind why the needles work.",
-        "es": "Sin misticismo. Esta es la fisiología detrás de por qué funcionan las agujas."
-      },
-      "body": {
-        "en": "When a needle enters tissue at an acupuncture point, three measurable things happen. Local circulation increases, which flushes inflammatory chemicals out of the area. The spinal cord releases endorphins and enkephalins, your body's own opioids. And the brain's pain-processing centers reduce their activity, which imaging studies have repeatedly confirmed.\n\nThat is why acupuncture is most effective for conditions where the nervous system has become oversensitive: chronic low back pain, migraines, neuropathy and tension that returns as soon as you leave the treatment table.\n\nA typical course is six to eight sessions, close together at first. Most people feel something shift by the third visit. If nothing has changed by the fifth, we say so and change the plan.",
-        "es": "Cuando una aguja entra en el tejido en un punto de acupuntura, ocurren tres cosas medibles. La circulación local aumenta, lo que arrastra las sustancias inflamatorias fuera de la zona. La médula espinal libera endorfinas y encefalinas, los opioides propios del cuerpo. Y los centros cerebrales que procesan el dolor reducen su actividad, algo que los estudios de imagen han confirmado repetidamente.\n\nPor eso la acupuntura es más efectiva en condiciones donde el sistema nervioso se ha vuelto hipersensible: dolor lumbar crónico, migrañas, neuropatía y tensión que regresa en cuanto se levanta de la mesa.\n\nUn ciclo típico es de seis a ocho sesiones, más seguidas al inicio. La mayoría nota un cambio en la tercera visita. Si a la quinta no ha cambiado nada, lo decimos y ajustamos el plan."
-      }
+      "title": "What Acupuncture Actually Does to Pain",
+      "excerpt": "No mysticism required. Here is the physiology behind why the needles work.",
+      "body": "When a needle enters tissue at an acupuncture point, three measurable things happen. Local circulation increases, which flushes inflammatory chemicals out of the area. The spinal cord releases endorphins and enkephalins, your body's own opioids. And the brain's pain-processing centers reduce their activity, which imaging studies have repeatedly confirmed.\n\nThat is why acupuncture is most effective for conditions where the nervous system has become oversensitive: chronic low back pain, migraines, neuropathy and tension that returns as soon as you leave the treatment table.\n\nA typical course is six to eight sessions, close together at first. Most people feel something shift by the third visit. If nothing has changed by the fifth, we say so and change the plan."
     },
     {
       "id": "p3",
@@ -636,77 +628,145 @@
       "date": "2026-07-05",
       "image": "/placeholder/blog-3",
       "author": "Sarah Kim, D.C.",
-      "title": {
-        "en": "How to Sleep When Your Neck Hurts",
-        "es": "Cómo Dormir Cuando le Duele el Cuello"
-      },
-      "excerpt": {
-        "en": "The right pillow height, the position to avoid, and why mornings are the worst.",
-        "es": "La altura correcta de almohada, la posición a evitar y por qué las mañanas son lo peor."
-      },
-      "body": {
-        "en": "You spend a third of your life in one position, so it matters more than any single exercise.\n\nIf you sleep on your back, the pillow should fill the curve behind your neck without pushing your head forward. If you sleep on your side, it should be thick enough to keep your nose in line with the center of your chest. Stomach sleeping is the one position we ask patients to give up: it holds the neck rotated for hours.\n\nMornings hurt most because discs rehydrate overnight and are at their fullest right when you wake. Give yourself five minutes of gentle movement before lifting anything, and never bend forward to brush your teeth or tie your shoes in that first hour.",
-        "es": "Pasa un tercio de su vida en una sola posición, así que importa más que cualquier ejercicio aislado.\n\nSi duerme de espaldas, la almohada debe llenar la curva detrás del cuello sin empujar la cabeza hacia adelante. Si duerme de lado, debe ser lo bastante gruesa para mantener la nariz alineada con el centro del pecho. Dormir boca abajo es la única posición que pedimos abandonar: mantiene el cuello rotado durante horas.\n\nLas mañanas duelen más porque los discos se rehidratan durante la noche y están en su punto más lleno al despertar. Dese cinco minutos de movimiento suave antes de levantar nada, y no se doble hacia adelante para cepillarse los dientes o atarse los zapatos en esa primera hora."
-      }
+      "title": "How to Sleep When Your Neck Hurts",
+      "excerpt": "The right pillow height, the position to avoid, and why mornings are the worst.",
+      "body": "You spend a third of your life in one position, so it matters more than any single exercise.\n\nIf you sleep on your back, the pillow should fill the curve behind your neck without pushing your head forward. If you sleep on your side, it should be thick enough to keep your nose in line with the center of your chest. Stomach sleeping is the one position we ask patients to give up: it holds the neck rotated for hours.\n\nMornings hurt most because discs rehydrate overnight and are at their fullest right when you wake. Give yourself five minutes of gentle movement before lifting anything, and never bend forward to brush your teeth or tie your shoes in that first hour."
     }
   ],
   "faqs": [
     {
       "id": "f1",
-      "q": { "en": "Does an adjustment hurt?", "es": "¿Duele un ajuste?" },
-      "a": {
-        "en": "No. Most patients describe relief and a release of pressure. If you are anxious about the popping sound, we have instrument and low-force techniques that produce no sound at all.",
-        "es": "No. La mayoría describe alivio y liberación de presión. Si le inquieta el sonido, contamos con técnicas instrumentales y de baja fuerza que no producen ningún sonido."
-      }
+      "q": "Does an adjustment hurt?",
+      "a": "No. Most patients describe relief and a release of pressure. If you are anxious about the popping sound, we have instrument and low-force techniques that produce no sound at all."
     },
     {
       "id": "f2",
-      "q": { "en": "Are the acupuncture needles painful?", "es": "¿Duelen las agujas de acupuntura?" },
-      "a": {
-        "en": "They are about the width of a hair and most people do not feel insertion at all. You may notice a dull heaviness at the point, which is the response we are looking for.",
-        "es": "Tienen aproximadamente el grosor de un cabello y la mayoría no siente la inserción. Puede notar una sensación de peso en el punto, que es precisamente la respuesta que buscamos."
-      }
+      "q": "Are the acupuncture needles painful?",
+      "a": "They are about the width of a hair and most people do not feel insertion at all. You may notice a dull heaviness at the point, which is the response we are looking for."
     },
     {
       "id": "f3",
-      "q": { "en": "Do you take insurance?", "es": "¿Aceptan seguros?" },
-      "a": {
-        "en": "We accept most major plans and will verify your benefits before your first visit so there are no surprises. We also offer transparent self-pay packages.",
-        "es": "Aceptamos la mayoría de los planes principales y verificamos sus beneficios antes de la primera visita para que no haya sorpresas. También ofrecemos paquetes de pago directo con precios claros."
-      }
+      "q": "Do you take insurance?",
+      "a": "We accept most major plans and will verify your benefits before your first visit so there are no surprises. We also offer transparent self-pay packages."
     },
     {
       "id": "f4",
-      "q": { "en": "How many visits will I need?", "es": "¿Cuántas visitas necesitaré?" },
-      "a": {
-        "en": "It depends on how long the problem has been there. Acute issues often resolve in two to four visits; chronic conditions usually need six to twelve. You will get an estimated plan after your exam.",
-        "es": "Depende de cuánto tiempo lleve el problema. Los casos agudos suelen resolverse en dos a cuatro visitas; los crónicos requieren de seis a doce. Recibirá un plan estimado después de su examen."
-      }
+      "q": "How many visits will I need?",
+      "a": "It depends on how long the problem has been there. Acute issues often resolve in two to four visits; chronic conditions usually need six to twelve. You will get an estimated plan after your exam."
     },
     {
       "id": "f5",
-      "q": { "en": "What happens on my first visit?", "es": "¿Qué ocurre en mi primera visita?" },
-      "a": {
-        "en": "A consultation and full exam, including posture and range of motion. If treatment is appropriate the same day, we will begin. Plan for about 45 minutes.",
-        "es": "Una consulta y un examen completo, incluyendo postura y rango de movimiento. Si el tratamiento es apropiado el mismo día, comenzamos. Calcule unos 45 minutos."
-      }
+      "q": "What happens on my first visit?",
+      "a": "A consultation and full exam, including posture and range of motion. If treatment is appropriate the same day, we will begin. Plan for about 45 minutes."
     },
     {
       "id": "f6",
-      "q": { "en": "Is chiropractic safe during pregnancy?", "es": "¿Es segura la quiropráctica durante el embarazo?" },
-      "a": {
-        "en": "Yes, with pregnancy-specific tables and low-force techniques. Prenatal care is one of the most common reasons patients come to us.",
-        "es": "Sí, con mesas específicas para el embarazo y técnicas de baja fuerza. El cuidado prenatal es una de las razones más comunes por las que nos visitan."
-      }
+      "q": "Is chiropractic safe during pregnancy?",
+      "a": "Yes, with pregnancy-specific tables and low-force techniques. Prenatal care is one of the most common reasons patients come to us."
     }
   ],
   "gallery": [
-    { "id": "g1", "image": "/placeholder/gallery-1", "caption": { "en": "Reception", "es": "Recepción" } },
-    { "id": "g2", "image": "/placeholder/gallery-2", "caption": { "en": "Adjustment room", "es": "Sala de ajustes" } },
-    { "id": "g3", "image": "/placeholder/gallery-3", "caption": { "en": "Acupuncture suite", "es": "Sala de acupuntura" } },
-    { "id": "g4", "image": "/placeholder/gallery-4", "caption": { "en": "Decompression table", "es": "Mesa de descompresión" } },
-    { "id": "g5", "image": "/placeholder/gallery-5", "caption": { "en": "Massage room", "es": "Sala de masaje" } },
-    { "id": "g6", "image": "/placeholder/gallery-6", "caption": { "en": "Rehab area", "es": "Área de rehabilitación" } }
+    {
+      "id": "g1",
+      "image": "/placeholder/gallery-1",
+      "caption": "Reception"
+    },
+    {
+      "id": "g2",
+      "image": "/placeholder/gallery-2",
+      "caption": "Adjustment room"
+    },
+    {
+      "id": "g3",
+      "image": "/placeholder/gallery-3",
+      "caption": "Acupuncture suite"
+    },
+    {
+      "id": "g4",
+      "image": "/placeholder/gallery-4",
+      "caption": "Decompression table"
+    },
+    {
+      "id": "g5",
+      "image": "/placeholder/gallery-5",
+      "caption": "Massage room"
+    },
+    {
+      "id": "g6",
+      "image": "/placeholder/gallery-6",
+      "caption": "Rehab area"
+    }
   ],
-  "submissions": { "appointments": [], "contacts": [] }
+  "submissions": {
+    "appointments": [],
+    "contacts": []
+  },
+  "products": [
+    {
+      "id": "pr1",
+      "slug": "cervical-support-pillow",
+      "image": "/placeholder/product-1",
+      "price": "$49",
+      "badge": "Most recommended",
+      "category": "Sleep & posture",
+      "title": "Cervical Support Pillow",
+      "excerpt": "Holds the natural curve of the neck so the adjustment you received holds overnight.",
+      "body": "The pillow we recommend most often. Contoured memory foam keeps the cervical spine in neutral whether you sleep on your back or your side, which is where most morning neck pain is created.\n\nRemovable bamboo cover, machine washable. Two heights available in clinic — we will check which one matches your shoulder width before you buy."
+    },
+    {
+      "id": "pr2",
+      "slug": "lumbar-support-cushion",
+      "image": "/placeholder/product-2",
+      "price": "$39",
+      "badge": "",
+      "category": "Sleep & posture",
+      "title": "Lumbar Support Cushion",
+      "excerpt": "Turns any office or car seat into one that supports the lower back properly.",
+      "body": "Eight hours in a chair without lumbar support flattens the natural curve of the lower spine and loads the discs. This cushion restores that curve with a firm foam core and an adjustable strap that keeps it in place.\n\nFits most office chairs and car seats. Especially useful for patients we are treating for sciatica or disc pressure."
+    },
+    {
+      "id": "pr3",
+      "slug": "hot-cold-therapy-pack",
+      "image": "/placeholder/product-3",
+      "price": "$24",
+      "badge": "",
+      "category": "Recovery",
+      "title": "Hot & Cold Therapy Pack",
+      "excerpt": "One pack for both phases of recovery — cold for inflammation, heat for stiffness.",
+      "body": "Freeze it for the first 48 hours after a flare-up to control inflammation, microwave it afterwards to relax guarded muscle. The gel stays flexible when frozen so it wraps around the neck, shoulder or low back instead of sitting on top.\n\nComes with a soft sleeve so it never touches the skin directly."
+    },
+    {
+      "id": "pr4",
+      "slug": "foam-roller",
+      "image": "/placeholder/product-4",
+      "price": "$35",
+      "badge": "",
+      "category": "Recovery",
+      "title": "High-Density Foam Roller",
+      "excerpt": "The at-home tool we prescribe most for thoracic mobility and tight hips.",
+      "body": "Most of the home exercises we assign for mid-back stiffness and hip tightness use a roller. This one is high-density EVA so it keeps its shape for years instead of softening after a few months.\n\n18 inches — long enough to roll across the spine, short enough to travel with. We will show you the exact drills for your case at your next visit."
+    },
+    {
+      "id": "pr5",
+      "slug": "herbal-relief-balm",
+      "image": "/placeholder/product-5",
+      "price": "$19",
+      "badge": "",
+      "category": "Topicals",
+      "title": "Herbal Relief Balm",
+      "excerpt": "Traditional Chinese herbal formula for sore muscles and stiff joints, drug free.",
+      "body": "A warming topical based on a classical liniment formula — camphor, menthol and herbal extracts that increase local circulation and calm surface pain. We use it in the treatment room after massage and cupping.\n\nNon-greasy, absorbs in under a minute. Safe to use several times a day."
+    },
+    {
+      "id": "pr6",
+      "slug": "resistance-band-kit",
+      "image": "/placeholder/product-6",
+      "price": "$29",
+      "badge": "",
+      "category": "Rehab",
+      "title": "Resistance Band Kit",
+      "excerpt": "Three tension levels covering every rehab progression we assign between visits.",
+      "body": "Rebuilding strength is what keeps pain from coming back, and almost every program we write can be done with bands. The kit includes light, medium and heavy loops plus a door anchor and a printed card of the core exercises.\n\nLatex free, so it is safe for patients with a latex sensitivity."
+    }
+  ]
 }

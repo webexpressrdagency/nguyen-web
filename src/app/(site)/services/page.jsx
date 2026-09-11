@@ -2,8 +2,8 @@ import { PageHero, CtaBand, ServiceCard } from '@/components/Cards';
 import { getContent } from '@/lib/store';
 import { t, getUi } from '@/lib/i18n';
 
-export default async function ServicesPage({ params }) {
-  const { locale } = await params;
+export default async function ServicesPage() {
+  const locale = 'en';
   const content = await getContent();
   const page = content.pages?.services || {};
   const ui = getUi(locale);
@@ -27,11 +27,9 @@ export default async function ServicesPage({ params }) {
 
       <CtaBand
         locale={locale}
-        title={locale === 'es' ? 'No sabe qué necesita?' : 'Not sure what you need?'}
+        title={'Not sure what you need?'}
         text={
-          locale === 'es'
-            ? 'Agende una evaluación y le diremos exactamente qué está causando su dolor.'
-            : 'Book an evaluation and we will tell you exactly what is causing your pain.'
+          'Book an evaluation and we will tell you exactly what is causing your pain.'
         }
       />
     </>

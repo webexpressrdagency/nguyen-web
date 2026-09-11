@@ -4,8 +4,8 @@ import { PageHero } from '@/components/Cards';
 import { getContent } from '@/lib/store';
 import { t, getUi } from '@/lib/i18n';
 
-export default async function AppointmentPage({ params }) {
-  const { locale } = await params;
+export default async function AppointmentPage() {
+  const locale = 'en';
   const content = await getContent();
   const page = content.pages?.appointment || {};
   const ui = getUi(locale);

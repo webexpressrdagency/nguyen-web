@@ -134,3 +134,30 @@ export function CtaBand({ locale, title, text, ctaLabel }) {
     </section>
   );
 }
+
+export function ProductCard({ product, locale }) {
+  const ui = getUi(locale);
+  const href = localePath(locale, `/products/${product.slug}`);
+  return (
+    <article className="card product-card reveal">
+      <div className="card__media product-card__media">
+        <img src={product.image} alt={t(product.title, locale)} loading="lazy" />
+        {product.badge ? <span className="product-badge">{t(product.badge, locale)}</span> : null}
+      </div>
+      <div className="card__body">
+        {product.category ? <span className="product-card__cat">{t(product.category, locale)}</span> : null}
+        <h3>
+          <Link href={href}>{t(product.title, locale)}</Link>
+        </h3>
+        <p>{t(product.excerpt, locale)}</p>
+        <div className="product-card__foot">
+          {product.price ? <span className="product-card__price">{t(product.price, locale)}</span> : null}
+          <Link href={href} className="link-more">
+            {ui.viewProduct}
+            <Icon name="arrowRight" />
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+}

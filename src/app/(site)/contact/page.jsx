@@ -4,8 +4,10 @@ import { PageHero } from '@/components/Cards';
 import { getContent } from '@/lib/store';
 import { t, getUi } from '@/lib/i18n';
 
-export default async function ContactPage({ params }) {
-  const { locale } = await params;
+export default async function ContactPage({ searchParams }) {
+  const locale = 'en';
+  const query = (await searchParams) || {};
+  const defaultSubject = typeof query.subject === 'string' ? query.subject.slice(0, 160) : '';
   const content = await getContent();
   const page = content.pages?.contact || {};
   const ui = getUi(locale);
@@ -67,7 +69,7 @@ export default async function ContactPage({ params }) {
             <div>
               <h2 style={{ fontSize: 'clamp(24px,2.6vw,34px)' }}>{ui.getInTouch}</h2>
               <p style={{ marginBottom: 26 }}>{t(page.intro, locale)}</p>
-              <LeadForm kind="contact" locale={locale} labels={ui} />
+              <LeadForm kind="contact" locale={locale} labels={ui} defaultSubject={defaultSubject} />
             </div>
             <aside className="info-panel">
               <h3 style={{ fontSize: 19 }}>{ui.openingHours}</h3>

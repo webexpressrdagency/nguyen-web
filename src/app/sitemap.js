@@ -1,5 +1,4 @@
 import { getContent } from '@/lib/store';
-import { LOCALES } from '@/lib/i18n';
 
 const base = () => {
   if (process.env.NEXT_PUBLIC_SITE_URL) return process.env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, '');
@@ -17,6 +16,7 @@ export default async function sitemap() {
     '',
     '/about',
     '/services',
+    '/products',
     '/therapists',
     '/gallery',
     '/blog',
@@ -26,29 +26,24 @@ export default async function sitemap() {
     '/contact',
   ];
 
-  const entries = [];
-  const locales = content.settings?.locales?.enabled?.length
-    ? content.settings.locales.enabled
-    : LOCALES;
+  const entries = staticPaths.map((path) => ({
+    url: `${root}${path || '/'}`,
+    lastModified: new Date(),
+    changeFrequency: path === '' ? 'weekly' : 'monthly',
+    priority: path === '' ? 1 : 0.7,
+  }));
 
-  locales.forEach((locale) => {
-    staticPaths.forEach((path) => {
-      entries.push({
-        url: `${root}/${locale}${path}`,
-        lastModified: new Date(),
-        changeFrequency: path === '' ? 'weekly' : 'monthly',
-        priority: path === '' ? 1 : 0.7,
-      });
-    });
-    (content.services || []).forEach((s) => {
-      entries.push({ url: `${root}/${locale}/services/${s.slug}`, lastModified: new Date(), priority: 0.6 });
-    });
-    (content.posts || []).forEach((p) => {
-      entries.push({
-        url: `${root}/${locale}/blog/${p.slug}`,
-        lastModified: new Date(p.date || Date.now()),
-        priority: 0.5,
-      });
+  (content.services || []).forEach((s2) => {
+    entries.push({ url: `${root}/services/${s2.slug}`, lastModified: new Date(), priority: 0.6 });
+  });
+  (content.products || []).forEach((pr) => {
+    entries.push({ url: `${root}/products/${pr.slug}`, lastModified: new Date(), priority: 0.6 });
+  });
+  (content.posts || []).forEach((po) => {
+    entries.push({
+      url: `${root}/blog/${po.slug}`,
+      lastModified: new Date(po.date || Date.now()),
+      priority: 0.5,
     });
   });
 

@@ -3,8 +3,8 @@ import { PageHero, CtaBand } from '@/components/Cards';
 import { getContent } from '@/lib/store';
 import { t } from '@/lib/i18n';
 
-export default async function FaqsPage({ params }) {
-  const { locale } = await params;
+export default async function FaqsPage() {
+  const locale = 'en';
   const content = await getContent();
   const page = content.pages?.faqs || {};
   const items = (content.faqs || []).map((f) => ({
@@ -29,11 +29,9 @@ export default async function FaqsPage({ params }) {
 
       <CtaBand
         locale={locale}
-        title={locale === 'es' ? '¿No encontró su respuesta?' : "Didn't find your answer?"}
+        title={"Didn't find your answer?"}
         text={
-          locale === 'es'
-            ? 'Escríbanos o llámenos y le respondemos personalmente.'
-            : 'Send us a message or call and we will answer personally.'
+          'Send us a message or call and we will answer personally.'
         }
       />
     </>

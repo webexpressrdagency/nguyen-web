@@ -6,7 +6,8 @@ import { getContent } from '@/lib/store';
 import { t, getUi, localePath } from '@/lib/i18n';
 
 export async function generateMetadata({ params }) {
-  const { locale, slug } = await params;
+  const locale = 'en';
+  const { slug } = await params;
   const content = await getContent();
   const service = (content.services || []).find((s) => s.slug === slug);
   if (!service) return {};
@@ -14,7 +15,8 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function ServiceDetail({ params }) {
-  const { locale, slug } = await params;
+  const locale = 'en';
+  const { slug } = await params;
   const content = await getContent();
   const service = (content.services || []).find((s) => s.slug === slug);
   if (!service) notFound();
@@ -85,11 +87,9 @@ export default async function ServiceDetail({ params }) {
 
       <CtaBand
         locale={locale}
-        title={locale === 'es' ? 'Comience su tratamiento' : 'Start your treatment'}
+        title={'Start your treatment'}
         text={
-          locale === 'es'
-            ? 'Primera evaluación completa, sin compromiso.'
-            : 'A full first evaluation, no commitment required.'
+          'A full first evaluation, no commitment required.'
         }
       />
     </>

@@ -2,8 +2,8 @@ import { PageHero, CtaBand, TeamCard } from '@/components/Cards';
 import { getContent } from '@/lib/store';
 import { t } from '@/lib/i18n';
 
-export default async function TherapistsPage({ params }) {
-  const { locale } = await params;
+export default async function TherapistsPage() {
+  const locale = 'en';
   const content = await getContent();
   const page = content.pages?.therapists || {};
 
@@ -26,11 +26,9 @@ export default async function TherapistsPage({ params }) {
 
       <CtaBand
         locale={locale}
-        title={locale === 'es' ? 'Elija a su terapeuta' : 'Choose your therapist'}
+        title={'Choose your therapist'}
         text={
-          locale === 'es'
-            ? 'Indique su preferencia al agendar y coordinamos el horario.'
-            : 'Tell us your preference when booking and we will match the schedule.'
+          'Tell us your preference when booking and we will match the schedule.'
         }
       />
     </>

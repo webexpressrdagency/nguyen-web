@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { getUi } from '@/lib/i18n';
 
 export default function NotFound() {
-  const ui = getUi('en');
+  const ui = getUi();
   return (
     <section className="section" style={{ textAlign: 'center' }}>
       <div className="container maxw-640 mx-auto">
@@ -23,7 +23,7 @@ export default function NotFound() {
         </p>
         <h1>{ui.notFoundTitle}</h1>
         <p>{ui.notFoundText}</p>
-        <Link href="/en" className="btn" style={{ marginTop: 24 }}>
+        <Link href="/" className="btn" style={{ marginTop: 24 }}>
           {ui.backHome}
         </Link>
       </div>
