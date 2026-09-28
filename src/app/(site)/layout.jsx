@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScrollFx from '@/components/ScrollFx';
 import ToTop from '@/components/ToTop';
+import MobileCta from '@/components/MobileCta';
 import { getContent } from '@/lib/store';
 import { t, getUi } from '@/lib/i18n';
 
@@ -42,6 +43,11 @@ export async function generateMetadata() {
   };
 }
 
+export async function generateViewport() {
+  const { settings } = await getContent();
+  return { themeColor: settings.colors?.primary || '#4285F4' };
+}
+
 export default async function SiteLayout({ children }) {
   const content = await getContent();
   const { settings, nav } = content;
@@ -56,9 +62,32 @@ export default async function SiteLayout({ children }) {
     --grad:linear-gradient(118deg, ${colors.secondary || '#34a853'} 0%, ${colors.primary || '#4285f4'} 100%);
   }`;
 
+  const c = settings.contact || {};
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalBusiness',
+    name: settings.siteName,
+    description: t(settings.seo?.description),
+    image: settings.logo || '/img/logo.webp',
+    telephone: c.phone,
+    email: c.email,
+    address: c.address ? { '@type': 'PostalAddress', streetAddress: c.address } : undefined,
+    url: process.env.NEXT_PUBLIC_SITE_URL || undefined,
+  };
+
   return (
-    <html lang="en" className={`${head.variable} ${body.variable}`}>
+    <html lang="en" className={`${head.variable} ${body.variable}`} suppressHydrationWarning>
       <body>
+        <script
+          dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }}
+        />
+        <a className="skip-link" href="#main">
+          Skip to content
+        </a>
         <style dangerouslySetInnerHTML={{ __html: themeVars }} />
         <Header
           brand={{
@@ -72,10 +101,16 @@ export default async function SiteLayout({ children }) {
           ctaLabel={ui.bookNow}
           labels={{ menu: ui.menu, close: ui.close }}
         />
-        <main>{children}</main>
+        <main id="main" tabIndex={-1}>{children}</main>
         <Footer content={content} />
         <ScrollFx />
         <ToTop />
+        <MobileCta
+          phone={c.phone}
+          phoneLink={c.phoneLink}
+          callLabel={ui.callUs}
+          bookLabel={ui.bookNow}
+        />
       </body>
     </html>
   );

@@ -52,7 +52,7 @@ export default function Header({ brand, nav = [], contact, ctaLabel, labels }) {
       <header className="site-header">
         <div className="container site-header__inner">
           <Link href="/" className="brand" aria-label={brand?.name}>
-            {brand?.logo ? <img src={brand.logo} alt={brand?.name || 'Logo'} /> : null}
+            {brand?.logo ? <img src={brand.logo} alt={brand?.name || 'Logo'} width={60} height={60} /> : null}
             <span className="brand__name">
               {brand?.shortName || brand?.name}
               <span className="brand__sub">{brand?.kicker}</span>
